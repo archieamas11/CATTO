@@ -13,17 +13,20 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
             font-family: 'Poppins', sans-serif;
         }
     </style>
-
-
 </head>
 
 <body>
@@ -47,22 +50,139 @@
         <main class="main_page_1">
             <div class="content">
                 <div class="text">
-                    <h1>-</h1>
                     <h1>What is a Cat?</h1>
                     <p>Discover the Fascinating world of Felines</p>
-                    <p>Scroll down</p>
+                    <h3>Scroll down</h3>
+
+                </div>
+            </div>
+        </main>
+
+
+    </section>
+
+    <section class="page_2">
+        <main class="main_page_2">
+            <div class="content">
+                <div class="text">
+                    <h2>- Cat Biology</h2>
+                    <h1>The Science Behind Cats</h1>
+                    <p>Cats are small, carnivorous mammals from the Felidae family, known for their agility, sharp
+                        claws, and retractable claws. Domesticated for nearly 10,000 years, cats share 95.6% of their
+                        genetic makeup with tigers. They have excellent night vision, which helps them hunt in low
+                        light, and their whiskers are highly sensitive, helping them navigate even the narrowest spaces.
+                    </p>
                 </div>
                 <div class="image">
-                    <img src="images/.png" alt="cat">
+                    <img src="images/cat_images_ (6).png" alt="cat">
+                    <img src="images/cat_images_ (7).png" alt="cat">
+                    <img src="images/cat_images_ (8).png" alt="cat">
                 </div>
             </div>
         </main>
     </section>
 
-    <footer></footer>
-    <!-- Add footer content here -->
+    <section class="page_3">
+        <main class="main_page_3">
+            <div class="content">
+                <div class="text">
+                    <h2>-</h2>
+                    <h2>Cat Behavior</h2>
+                    <h1>Understanding Cat Behavior</h1>
+                    <p>Ever wondered why your cat kneads or purrs? Cats communicate through body language,
+                        vocalizations, and scent marking. Playful by nature, they also have strong hunting instincts,
+                        and their independence has made them popular companions for busy lifestyles.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="images/cat_images_ (2).png" alt="cat">
+                    <img src="images/cat_images_ (3).png" alt="cat">
+                    <img src="images/cat_images_ (4).png" alt="cat">
+                    <img src="images/cat_images_ (5).png" alt="cat">
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section class="page_4">
+        <main class="main_page_4">
+            <div class="content">
+                <div class="text">
+                    <h2>-</h2>
+                    <h2>Fun Facts</h2>
+                    <h1>Interesting Cat Facts</h1>
+                </div>
+                <div class="image">
+                    <div class="image_1">
+                        <img src="images/cat_images_ (9).png" alt="cat">
+                        <h1>Snooze Like a Pro: The Cat Nap Chronicles</h1>
+                        <p>Cats sleep 12-16 hours a day—basically, they’re professional nappers!</p>
+                    </div>
+                    <div class="image_2">
+                        <img src="images/cat_images_ (1).png" alt="cat">
+                        <h1>Clowder of Cats: The Feline Social Club</h1>
+                        <p>A group of cats is called a "clowder." Imagine the gossip sessions they have!
+                        </p>
+                    </div>
+                    <div class="image_3">
+                        <img src="images/cat_images_ (10).png" alt="cat">
+                        <h1>The Feline Methuselah: The Oldest Cat
+                        </h1>
+                        <p>The oldest cat lived to be 38 years old! Talk about a cat with nine lives—and then some!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <footer>
+        <div class="footer_wrapper">
+            <div class="profile">
+                <p>Hi, I'm Rico, a passionate web developer with a love for creating dynamic and responsive websites.
+                    With a keen eye for detail and a dedication to continuous learning, I strive to deliver high-quality
+                    web solutions that meet the needsof my clients. Let's build something amazing together!</p>
+                <div class="picture">
+                    <img src="images/catto_icon.png" alt="logo">
+                    <h1>Rico Albarico</h1>
+                </div>
+            </div>
+            <div class="links">
+                <h1>Quick Links</h1>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="biology.html">About Us</a></li>
+                    <li><a href="behavior.html">Contact</a></li>
+                    <li><a href="facts.html">Contact Information</a></li>
+                    <li><a href="about.html">Email: info@cats.com <br>
+                            Phone: (123) 123-4567 <br>
+                            Location: City, Country</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <h1>Connect with Us</h1>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://www.twitter.com/"><img src="images/twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram"></a></li>
+                    <li><a href="https://www.pinterest.com/"><img src="images/pinterest.png" alt="pinterest"></a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
 </body>
+
+<script>
+    window.onscroll = function () {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 0) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    };
+</script>
+
 
 </html>

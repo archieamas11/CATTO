@@ -11,21 +11,28 @@ body {
 }
 
 .navbar {
-    border: 1px solid #000;
     padding: 1rem 100px;
-    height: 100px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* Change to space-between */
     margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: var(--navbar_bg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    border: 1px solid #000;
     padding: 0.5rem;
     width: auto;
     height: auto;
@@ -51,7 +58,6 @@ body {
     text-align: center;
     justify-content: center;
     margin: 0;
-    border: solid;
     padding: 0;
 }
 
