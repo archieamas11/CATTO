@@ -6,3 +6,7 @@
     --2nd_page_bg: #2e3440;
     --navbar_bg: #2e34407b;
 }
+
+html {
+    scroll-behavior: smooth;
+}

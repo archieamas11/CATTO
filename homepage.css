@@ -30,7 +30,7 @@
         position: relative;
         top: 35%;
     }
-    
+
 
     p {
         font-size: 50px;
@@ -58,6 +58,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
 
+
     p,
     h1,
     h2 {
@@ -67,4 +68,11 @@ h1 {
 
 .page_3 {
     background: var(--brown);
+    height: 100vh;
+
+}
+
+.page_4 {
+    height: 100vh;
+    background-color: var(--pink);
 }
