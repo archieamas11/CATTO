@@ -10,3 +10,25 @@
 html {
     scroll-behavior: smooth;
 }
+
+.main {
+    width: 100%;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.336);
+}
+
+.cat {
+    position: absolute;
+    font-size: 2rem;
+    animation: floatCats linear infinite;
+}
+
+@keyframes floatCats {
+    0% {
+        transform: translateY(0) rotate(0deg); /* Start from below */
+    }
+
+    100% {
+        transform: translateY(-100vh) rotate(360deg); /* Move upwards past the screen */
+    }
+}
