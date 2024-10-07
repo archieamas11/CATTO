@@ -157,7 +157,7 @@
         right: 0;
     }
 
-    #sidebar-active:checked~#overlay {
+    #sidebar-active:checked~#overlay1 {
         height: 100%;
         width: 100%;
         position: fixed;

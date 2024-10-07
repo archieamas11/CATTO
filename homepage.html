@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CATTO</title>
-    <link rel="stylesheet" href="behavior.css">
+
     <link rel="stylesheet" href="biology.css">
     <link rel="stylesheet" href="facts.css">
     <link rel="stylesheet" href="footer.css">
@@ -32,13 +32,14 @@
 <body>
     <section class="page_1" id="homepage">
         <nav class="navbar">
+            <script src="navbar.js"></script>
             <input type="checkbox" id="sidebar-active">
             <label for="sidebar-active" class="open-sidebar-button">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                     <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                 </svg>
             </label>
-            <label id="overlay" for="sidebar-active"></label>
+            <label id="overlay1" for="sidebar-active"></label>
 
             <div class="links-container">
 
@@ -58,23 +59,38 @@
                 <a href="#facts">Fun Facts</a>
                 <a href="#about">Contact Us</a>
             </div>
-            </div>
-
         </nav>
-        </div>
-        <main class="main_page_1">
+        <div class="main_page_1">
             <div class="content">
                 <div class="text">
                     <h1>What is a Cat?</h1>
                     <p>Discover the Fascinating world of Felines</p>
                     <h3>Scroll down</h3>
-
                 </div>
             </div>
-        </main>
+        </div>
     </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="page_2" id="biology">
+        <script src="card.js"></script>
         <main class="main_page_2">
             <div class="content">
                 <div class="text">
@@ -88,13 +104,30 @@
                     <button>Learn more</button>
                 </div>
                 <div class="image">
-                    <img src="images/cat_images_ (6).png" alt="cat">
-                    <img src="images/cat_images_ (7).png" alt="cat">
-                    <img src="images/cat_images_ (8).png" alt="cat">
+                    <img src="images/cat_images_ (6).png" alt="cat image 1" class="clickable-image"
+                        data-description="Description for cat image 1">
+                    <img src="images/cat_images_ (7).png" alt="cat image 2" class="clickable-image"
+                        data-description="Description for cat image 2">
+                    <img src="images/cat_images_ (8).png" alt="cat image 3" class="clickable-image"
+                        data-description="Description for cat image 3">
                 </div>
             </div>
         </main>
+        <div class="overlay" id="overlay">
+            <div class="card" id="card">
+                <img id="cardImage" src="" alt="enlarged cat" />
+                <div class="description" id="description"></div>
+            </div>
+        </div>
     </section>
+
+
+
+
+
+
+
+    
 
     <section class="page_3" id="behavior">
         <main class="main_page_3">
@@ -184,19 +217,6 @@
             </div>
         </div>
     </footer>
-
 </body>
-
-<script>
-    window.onscroll = function () {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 0) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    };
-</script>
-
 
 </html>
