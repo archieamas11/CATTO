@@ -5,28 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CATTO</title>
-
     <link rel="stylesheet" href="biology.css">
+    <link rel="stylesheet" href="behavior.css">
     <link rel="stylesheet" href="facts.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+        rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-        }
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
 </head>
+
 <body>
     <div class="main"></div>
     <section class="page_1" id="homepage">
@@ -73,7 +66,7 @@
         <main class="main_page_2">
             <div class="content">
                 <div class="text">
-                    <h2>- Cat Biology</h2>
+                    <h2>Cat Biology</h2>
                     <h1>The Science <br>Behind Cats</h1>
                     <p>Cats are small, carnivorous mammals from the Felidae family, known for their agility, sharp
                         claws, and retractable claws. Domesticated for nearly 10,000 years, cats share 95.6% of their
@@ -99,20 +92,15 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
     <section class="page_3" id="behavior">
+        <div class="custom-shape-divider-top-1728494491">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+            </svg>
+        </div>
         <main class="main_page_3">
             <div class="content">
                 <div class="text">
-                    <h2>-</h2>
                     <h2>Cat Behavior</h2>
                     <h1>Understanding Cat Behavior</h1>
                     <p>Ever wondered why your cat kneads or purrs? Cats communicate through body language,
@@ -120,16 +108,61 @@
                         and their independence has made them popular companions for busy lifestyles.
                     </p>
                 </div>
-                <div class="image">
-                    <img src="images/cat_images_ (2).png" alt="cat">
-                    <img src="images/cat_images_ (3).png" alt="cat">
-                    <img src="images/cat_images_ (4).png" alt="cat">
-                    <img src="images/cat_images_ (5).png" alt="cat">
+                <div class="carousel">
+                    <div class="title"></div>
+                    <div class="navigation">
+                        <button type="button" onclick="moveLeft()">
+                            <span class="material-icons-outlined">chevron_left</span>
+                        </button>
+                    </div>
+                    <div class="slide-lock">
+                        <div class="slides">
+                            <div class="slide">
+                                <div class="carousel-images">
+                                    <img src="images/cat_images_ (2).png" alt="cat">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="carousel-images">
+                                    <img src="images/cat_images_ (3).png" alt="cat">
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <div class="carousel-images">
+                                    <img src="images/cat_images_ (4).png" alt="cat">
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <div class="carousel-images">
+                                    <img src="images/cat_images_ (5).png" alt="cat">
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <div class="carousel-images">
+                                    <img src="images/cat_images_ (6).png" alt="cat">
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <div class="carousel-images">
+                                    <img src="images/cat_images_ (7).png" alt="cat">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <button type="button" onclick="moveRight()">
+                            <span class="material-icons-outlined">chevron_right</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </main>
+        <script src="carousel.js"></script>
     </section>
-
     <section class="page_4" id="facts">
         <main class="main_page_4">
             <div class="content">

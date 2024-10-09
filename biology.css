@@ -1,10 +1,25 @@
-/* Main styles */
+.page_2 {
+    background: var(--2nd_page_bg);
+    height: 100vh;
+    transition: background 0.3s ease;
+
+    p,
+    h1,
+    h2 {
+        color: var(--brown);
+        transition: color 0.3s ease;
+    }
+}
+
 .main_page_2 {
+    background: var(--2nd_page_bg);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-    background: var(--2nd_page_bg);
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    transition: all 0.3s ease;
 }
 
 .main_page_2 .content {
@@ -15,6 +30,7 @@
     width: 100%;
     gap: 100px;
     flex-wrap: wrap;
+    transition: all 0.3s ease;
 }
 
 .main_page_2 h2 {
@@ -22,6 +38,7 @@
     font-size: 20px;
     margin-bottom: 100px;
     letter-spacing: 8px;
+    transition: all 0.3s ease;
 }
 
 .main_page_2 h1 {
@@ -29,11 +46,13 @@
     font-size: 75px;
     line-height: 80px;
     margin-bottom: 10px;
+    transition: all 0.3s ease;
 }
 
 .main_page_2 p {
     font-weight: 200;
     margin-bottom: 50px;
+    transition: all 0.3s ease;
 }
 
 .main_page_2 button {
@@ -45,7 +64,7 @@
     height: 60px;
     width: 200px;
     cursor: pointer;
-    transition: ease 0.3s;
+    transition: all 0.3s ease;
 }
 
 .main_page_2 button:hover {
@@ -54,10 +73,10 @@
     background-color: transparent;
 }
 
-
 .main_page_2 .text {
     flex: 1 1 45%;
     max-width: 600px;
+    transition: all 0.3s ease;
 }
 
 /* Image styles */
@@ -68,6 +87,7 @@
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+    transition: all 0.3s ease;
 }
 
 .main_page_2 .image img {
@@ -76,7 +96,7 @@
     height: auto;
     border-radius: 10px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
 }
 
 .main_page_2 .image img:hover {
@@ -95,6 +115,7 @@
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(50px);
+    transition: all 0.3s ease;
 }
 
 .card {
@@ -102,18 +123,46 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 #cardImage {
     max-width: 100%;
     height: auto;
     width: 500px;
+    transition: all 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 1110px) {
+    .page_2 {
+        height: 100%;
+        animation: smoothResize 0.3s ease;
+    }
 }
 
 @media (max-width: 768px) {
+    .main_page_2 {
+        width: 100%;
+        padding: 0 20px;
+    }
+
     .main_page_2 h1 {
         font-size: 60px;
         line-height: 60px;
+        text-align: center;
+        animation: smoothResize 0.3s ease;
+    }
+
+    .main_page_2 h2 {
+        text-align: center;
+        animation: smoothResize 0.3s ease;
+    }
+
+    .main_page_2 p {
+        text-align: center;
+        padding: 0 20px;
+        animation: smoothResize 0.3s ease;
     }
 
     .main_page_2 button {
@@ -122,13 +171,41 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        animation: smoothResize 0.3s ease;
     }
 
     .main_page_2 .content {
-        gap: 50px;
+        gap: 20px;
+        animation: smoothResize 0.3s ease;
+    }
+}
+
+@media (max-width: 480px) {
+    .main_page_2 h1 {
+        font-size: 50px;
+        line-height: 50px;
     }
 
-    .main_page_2 .text {
+    .main_page_2 h2 {
+        font-size: 18px;
+    }
+
+    .main_page_2 p {
+        font-size: 14px;
+    }
+
+    .main_page_2 button {
+        width: 100%;
+    }
+
+    .main_page_2 .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_page_2 .text,
+    .main_page_2 .image {
         flex: 1 1 100%;
+        max-width: 100%;
     }
 }
