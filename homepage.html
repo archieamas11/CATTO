@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CATTO</title>
     <link rel="stylesheet" href="biology.css">
     <link rel="stylesheet" href="behavior.css">
+    <link rel="stylesheet" href="breed.css">
     <link rel="stylesheet" href="facts.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="homepage.css">
@@ -19,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <section class="page_1" id="homepage">
         <nav class="navbar">
@@ -42,8 +45,9 @@
                     <img src="images/catto_icon.png" alt="logo">
                 </a>
                 <a href="#homepage">Home</a>
-                <a href="#biology">Cat Biology</a>
-                <a href="#behavior">Cat Behavior</a>
+                <a href="#biology">Biology</a>
+                <a href="#behavior">Behavior</a>
+                <a href="#cat-breeds">Breeds</a>
                 <a href="#facts">Fun Facts</a>
                 <a href="#about">Contact Us</a>
             </div>
@@ -159,6 +163,77 @@
         </main>
         <script src="carousel.js"></script>
     </section>
+    <section class="four" id="cat-breeds">
+        <div class="content">
+            <div class="image">
+                <img src="images/cat_images_ (6).png" alt="cat image 1">
+            </div>
+            <div class="text">
+                <h2>Cat Breeds</h2>
+                <h1>Popular Cat Breeds</h1>
+                <p>Cats come in a wide variety of breeds, from the playful Siamese to the majestic
+                    Maine Coon. Include a brief mention of domestic versus wild-looking breeds and highlight the
+                    differences between purebred cats and mixed-breed cats.
+                </p>
+                <button
+                    onclick="document.querySelector('.center').style.display = 'block'; location.href='#learnmore'">Learn
+                    more</button>
+            </div>
+        </div>
+        <div class="center">
+            <div class="vertical-carousel" id="learnmore">
+                <div class="left">
+                    <div class="left-item">
+                        <div class="title">Siamese</div>
+                        <div class="text">
+                            Siamese cats are sleek and elegant, with short fur and striking blue almond-shaped eyes.
+                            They typically have light-colored bodies with darker points on their ears, face, paws, and
+                            tail. Known for their vocal and social nature, Siamese cats are extremely affectionate and
+                            enjoy interacting with humans. They thrive in environments where they receive lots of
+                            attention, and daily playtime is essential to keep them mentally stimulated.
+                        </div>
+                    </div>
+                    <div class="left-item">
+                        <div class="title">Persian</div>
+                        <div class="text">
+                            Persian cats are known for their flat faces, luxurious long fur, and round eyes. They have a
+                            calm and laid-back personality, preferring a quiet, stable environment. Persians are
+                            affectionate but not overly energetic, making them excellent indoor pets. Their long fur
+                            requires daily brushing to keep it tangle-free, and regular eye cleaning is often necessary.
+                            Persians enjoy lounging and prefer a peaceful atmosphere.
+                        </div>
+                    </div>
+                    <div class="left-item">
+                        <div class="title">Puspin</div>
+                        <div class="text">
+                            Puspins (short for "Pusang Pinoy") are mixed-breed domestic cats native to the Philippines.
+                            They come in various colors, patterns, and sizes, making each one unique. Known for their
+                            resilience and adaptability, Puspins are often found as street cats but also make wonderful
+                            pets. They are generally friendly, affectionate, and independent, with a playful yet relaxed
+                            nature. Puspins require minimal grooming and are relatively low-maintenance, making them
+                            ideal for busy households. They are highly adaptable to different living conditions, whether
+                            indoors or outdoors.
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="item active">
+                        <img src="images/cat_breed (1).png" alt="" />
+                        <button type="button">View More</button>
+                    </div>
+                    <div class="item">
+                        <img src="images/cat_breed (2).png" alt="" />
+                        <button type="button">View More</button>
+                    </div>
+                    <div class="item">
+                        <img src="images/cat_breed (3).png" alt="" />
+                        <button type="button">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="breed.js"></script>
+    </section>
     <section class="page_4" id="facts">
         <main class="main_page_4">
             <div class="content">
@@ -190,6 +265,15 @@
         </main>
     </section>
     <footer>
+        <div class="custom-shape-divider-top-1728645960">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <rect x="1200" height="3.6"></rect>
+                <rect height="3.6"></rect>
+                <path d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
         <div class="footer_wrapper" id="about">
             <div class="profile">
                 <p>Hi, I'm Rico, a passionate web developer with a love for creating dynamic and responsive websites.
@@ -225,4 +309,5 @@
         </div>
     </footer>
 </body>
+
 </html>

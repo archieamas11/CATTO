@@ -1,0 +1,311 @@
+.four {
+    background: var(--teal);
+    transition: background 0.3s ease;
+    height: auto;
+
+    p,
+    h1,
+    h2 {
+        color: var(--teal_text_color);
+        transition: color 0.3s ease;
+    }
+}
+
+.four .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.four .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
+}
+
+.four h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 100px;
+    letter-spacing: 8px;
+    transition: all 0.3s ease;
+}
+
+.four h1 {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.four p {
+    font-weight: 200;
+    margin-bottom: 50px;
+    transition: all 0.3s ease;
+}
+
+.four button {
+    color: var(--dark_blue);
+    font-weight: 700;
+    border: transparent;
+    border-radius: 10px;
+    background-color: var(--dark_brown);
+    height: 60px;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.four button:hover {
+    transform: scale(1.05);
+    border: 2px solid var(--teal_text_color);
+    background-color: transparent;
+    color: var(--button_hover_bg);
+}
+
+.four .text {
+    flex: 1 1 45%;
+    max-width: 600px;
+    transition: all 0.3s ease;
+}
+
+.four .image {
+    display: flex;
+    flex: 1 1 45%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
+}
+
+.four .image img {
+    width: 80%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+}
+
+.four .image img:hover {
+    transform: scale(1.05);
+}
+
+.four .center {
+    width: 100%;
+}
+
+.four .top {
+    width: 100%;
+    height: 100vh;
+    font-family: poppins;
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 3px rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.four .vertical-carousel {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.four .left {
+    flex-basis: 50%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.four .left-item {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.four .title {
+    font-size: 110px;
+    font-weight: 600;
+    color: white;
+}
+
+.four .text {
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+}
+
+.four .right {
+    position: sticky;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.four .item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.25s;
+    transform: scale(0.3);
+}
+
+.four .item.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.four .item img {
+    width: 500px;
+    border-radius: 20px;
+}
+
+.four .item button {
+    background: white;
+    padding: 15px 40px;
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 7mm;
+    margin-top: 50px;
+}
+
+.four .item::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(6px) saturate(200%);
+    -webkit-backdrop-filter: blur(6px) saturate(200%);
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .four .content h1 {
+        font-size: 60px;
+        line-height: 60px;
+        text-align: center;
+        animation: smoothResize 0.3s ease;
+    }
+
+    .four .content h2 {
+        text-align: center;
+        animation: smoothResize 0.3s ease;
+    }
+
+    .four .content p {
+        text-align: center;
+        padding: 0 20px;
+        animation: smoothResize 0.3s ease;
+    }
+
+    .four .content button {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: smoothResize 0.3s ease;
+    }
+}
+
+@media (max-width: 480px) {
+    .four .content h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .four .content h2 {
+        font-size: 18px;
+    }
+
+    .four .content p {
+        font-size: 14px;
+    }
+
+    .four .content button {
+        width: 100%;
+    }
+
+    .four .content .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .four .content .text,
+    .four .content .image {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .left-item .title {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        font-size: 80px;
+        border: solid red;
+    }
+
+    .left-item .title .text {
+        font-size: 80px;
+        border: solid;
+    }
+
+    .left-item {
+        width: 80%;
+        border: solid;
+    }
+
+    .right {
+        position: static;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid violet;
+    }
+}
