@@ -1,4 +1,8 @@
+
+
+
 .four {
+    position: relative;
     background: var(--teal);
     transition: background 0.3s ease;
     height: auto;
@@ -220,7 +224,7 @@
 }
 
 @media (max-width: 768px) {
-    .content {
+     .content {
         width: 100%;
         padding: 0 20px;
     }

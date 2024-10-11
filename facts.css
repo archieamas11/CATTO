@@ -74,10 +74,20 @@
     transform: translateY(-10px);
 }
 
+@media (max-width: 1132px) {
+    .page_4 {
+        height: auto;
+    }
+}
+
 @media (max-width: 768px) {
     .image {
         flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
 
     .main_page_4 .text h2 {
         font-size: 1.5rem;

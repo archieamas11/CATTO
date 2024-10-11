@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <section class="page_1" id="homepage">
         <header>
@@ -47,10 +48,26 @@
         </header>
         <script>
             const hamburger = document.querySelector('.hamburger');
+            const navBar = document.querySelector('.nav-bar');
+            const navLinks = document.querySelectorAll('.nav-bar ul li a');
+            const header = document.querySelector('header');
+
             hamburger.onclick = function () {
-                const navBar = document.querySelector('.nav-bar');
                 navBar.classList.toggle('active');
-            }
+
+                if (navBar.classList.contains('active')) {
+                    header.classList.add('change-background');
+                } else {
+                    header.classList.remove('change-background');
+                }
+            };
+
+            navLinks.forEach(link => {
+                link.onclick = function () {
+                    navLinks.forEach(nav => nav.classList.remove('active'));
+                    this.classList.add('active');
+                };
+            });
         </script>
         <div class="main"></div>
         <script src="cat.js"></script>
@@ -123,7 +140,7 @@
                         <div class="slides">
                             <div class="slide">
                                 <div class="carousel-images">
-                                    <img src="images/cat_images_ (2).png" alt="cat">
+                                    <img src="images/cat_images_ (9).png" alt="cat">
                                 </div>
                             </div>
                             <div class="slide">
@@ -133,7 +150,7 @@
                             </div>
                             <div class="slide">
                                 <div class="carousel-images">
-                                    <img src="images/cat_images_ (4).png" alt="cat">
+                                    <img src="images/cat_breed (1).png" alt="cat">
                                 </div>
                             </div>
                             <div class="slide">

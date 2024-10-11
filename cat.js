@@ -10,13 +10,11 @@ setTimeout(() => {
     cat.className = "cat";
     cat.innerText = catEmojis[Math.floor(Math.random() * catEmojis.length)];
 
-    // Random position - limit to 90vw
-    cat.style.left = Math.random() * 80 + "vw"; // Changed from 100 to 90
+    cat.style.left = Math.random() * 80 + "vw";
     cat.style.top = Math.random() * 80 + "vh";
     cat.style.animationDuration = Math.random() * 5 + 6 + "s"; // Duration varies for each cat
-    cat.style.animationDelay = "0s"; // Set delay to 0 for all cats
+    cat.style.animationDelay = "0s"; 
 
-    // Assign random size from predefined categories
     cat.style.fontSize = sizes[Math.floor(Math.random() * sizes.length)];
 
     main.appendChild(cat);
