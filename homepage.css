@@ -7,7 +7,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: auto;
     height: 100vh;
     min-height: 100vh;
     z-index: -1;
@@ -54,6 +54,5 @@
 
 
 .page_4 {
-    height: 100vh;
     background-color: var(--pink);
 }

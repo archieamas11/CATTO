@@ -213,7 +213,6 @@
         width: calc(100% + 1.3px);
         height: 35px;
         transition: all 0.3s ease-in-out;
-        /* Add transition */
     }
 }
 
@@ -237,5 +236,13 @@
         margin-bottom: 10px;
         transition: all 0.3s ease-in-out;
         /* Add transition */
+    }
+
+    .main_page_3 .content {
+        padding-top: 100px;
+    }
+
+    .page_3 {
+        height: auto;
     }
 }

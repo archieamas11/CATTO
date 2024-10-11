@@ -1,4 +1,4 @@
-const main = document.querySelector(".main");
+const main = document.querySelector(".main"); 
 const catEmojis = ["🐱", "😺", "😸", "😹", "😻", "😼", "😽"];
 const totalCats = 40;
 
@@ -10,9 +10,9 @@ setTimeout(() => {
     cat.className = "cat";
     cat.innerText = catEmojis[Math.floor(Math.random() * catEmojis.length)];
 
-    // Random position
-    cat.style.left = Math.random() * 100 + "vw";
-    cat.style.top = Math.random() * 100 + "vh";
+    // Random position - limit to 90vw
+    cat.style.left = Math.random() * 80 + "vw"; // Changed from 100 to 90
+    cat.style.top = Math.random() * 80 + "vh";
     cat.style.animationDuration = Math.random() * 5 + 6 + "s"; // Duration varies for each cat
     cat.style.animationDelay = "0s"; // Set delay to 0 for all cats
 
