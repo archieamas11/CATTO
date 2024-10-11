@@ -21,37 +21,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
-
 <body>
     <section class="page_1" id="homepage">
-        <nav class="navbar">
+        <header>
             <script src="navbar.js"></script>
-            <input type="checkbox" id="sidebar-active">
-            <label for="sidebar-active" class="open-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                </svg>
-            </label>
-            <label id="overlay1" for="sidebar-active"></label>
-            <div class="links-container">
-                <label for="sidebar-active" class="close-sidebar-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                        <path
-                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                    </svg>
-                </label>
-                <a href="#home" class="logo">
-                    CATTO
-                    <img src="images/catto_icon.png" alt="logo">
-                </a>
-                <a href="#homepage">Home</a>
-                <a href="#biology">Biology</a>
-                <a href="#behavior">Behavior</a>
-                <a href="#cat-breeds">Breeds</a>
-                <a href="#facts">Fun Facts</a>
-                <a href="#about">Contact Us</a>
+            <div class="logo">
+                CATTO
+                <img src="images/catto_icon.png" alt="logo">
             </div>
-        </nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#homepage" class="active">Home</a></li>
+                    <li><a href="#biology">Biology</a></li>
+                    <li><a href="#behavior">Behavior</a></li>
+                    <li><a href="#cat-breeds">Breeds</a></li>
+                    <li><a href="#facts">Fun Facts</a></li>
+                    <li><a href="#about">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            hamburger.onclick = function () {
+                const navBar = document.querySelector('.nav-bar');
+                navBar.classList.toggle('active');
+            }
+        </script>
         <div class="main"></div>
         <script src="cat.js"></script>
         <div class="main_page_1">
