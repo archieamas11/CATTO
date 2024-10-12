@@ -1,6 +1,3 @@
-
-
-
 .four {
     position: relative;
     background: var(--teal);
@@ -108,18 +105,6 @@
     width: 100%;
 }
 
-.four .top {
-    width: 100%;
-    height: 100vh;
-    font-family: poppins;
-    font-size: 100px;
-    color: white;
-    text-shadow: 3px 3px rgba(255, 255, 255, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .four .vertical-carousel {
     width: 100%;
     height: fit-content;
@@ -151,13 +136,14 @@
 
 .four .title {
     font-size: 110px;
-    font-weight: 600;
-    color: white;
+    font-weight: 700;
+    color: var(--brown);
+    padding-top: 50px;
 }
 
 .four .text {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 200;
     color: white;
 }
 
@@ -216,15 +202,15 @@
     left: -100%;
     width: 100%;
     height: 100vh;
-    backdrop-filter: blur(6px) saturate(200%);
-    -webkit-backdrop-filter: blur(6px) saturate(200%);
+    backdrop-filter: blur(6px) saturate(100%);
     background: rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     z-index: -1;
 }
 
 @media (max-width: 768px) {
-     .content {
+    .content {
         width: 100%;
         padding: 0 20px;
     }
@@ -291,12 +277,10 @@
         display: flex;
         margin: 0 auto;
         font-size: 80px;
-        border: solid red;
     }
 
     .left-item .title .text {
         font-size: 80px;
-        border: solid;
     }
 
     .left-item {
@@ -310,6 +294,5 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: solid violet;
     }
 }
